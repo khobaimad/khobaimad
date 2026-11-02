@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imad Khoba | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Imad Khoba, freelance full-stack developer based in Casablanca, Morocco.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <a href="#hero" class="logo"><i class="fa-solid fa-terminal"></i> imad<span>.dev</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#footer" class="btn-small">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm</p>
+        <h1>Imad Khoba</h1>
+        <p class="lead">A full-stack developer who turns ideas into clean, working web apps.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">See my projects</a>
+          <a href="#footer" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Terminal introduction">
+        <div class="terminal-bar">
+          <i></i><i></i><i></i>
+          <span>~/imad/portfolio</span>
+        </div>
+        <pre class="terminal-body" id="terminal"></pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="file">about.md</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm Imad, a full-stack developer from Casablanca, Morocco. I build web apps from the interface to the data behind it, and I care about code that is clean, readable and fast.</p>
+          <p>I earned my Baccalauréat in Physics in 2026 with Honors (Mention Bien). That background taught me to think logically and solve problems step by step, which is exactly how I approach code.</p>
+          <p>I'm working as a freelancer and I'm open to new projects, so I'd love to hear about yours.</p>
+        </div>
+        <ul class="facts">
+          <li><i class="fa-solid fa-location-dot"></i> Casablanca, Morocco</li>
+          <li><i class="fa-solid fa-laptop-code"></i> Freelance full-stack developer</li>
+          <li><i class="fa-solid fa-graduation-cap"></i> Baccalauréat in Physics, 2026</li>
+          <li><i class="fa-solid fa-circle-check"></i> Open to new projects</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2 class="file">education.json</h2>
+      <div class="timeline">
+        <article class="tl-item">
+          <time>2026</time>
+          <h3>Baccalauréat in Physics</h3>
+          <p class="where">Graduated with Honors (Mention Bien)</p>
+          <p>Strong foundations in mathematics, physics and logical reasoning.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="file">skills.js</h2>
+      <div class="skills-grid">
+        <div class="skill"><div class="skill-head"><span><i class="fa-brands fa-html5"></i> HTML &amp; CSS</span><b>90%</b></div><div class="bar"><div data-level="90"></div></div></div>
+        <div class="skill"><div class="skill-head"><span><i class="fa-brands fa-js"></i> JavaScript</span><b>80%</b></div><div class="bar"><div data-level="80"></div></div></div>
+        <div class="skill"><div class="skill-head"><span><i class="fa-brands fa-react"></i> React</span><b>75%</b></div><div class="bar"><div data-level="75"></div></div></div>
+        <div class="skill"><div class="skill-head"><span><i class="fa-solid fa-fire"></i> Firebase</span><b>60%</b></div><div class="bar"><div data-level="60"></div></div></div>
+        <div class="skill"><div class="skill-head"><span><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span><b>75%</b></div><div class="bar"><div data-level="75"></div></div></div>
+        <div class="skill"><div class="skill-head"><span><i class="fa-solid fa-mobile-screen"></i> Responsive design</span><b>85%</b></div><div class="bar"><div data-level="85"></div></div></div>
+      </div>
+      <p class="tools">Also: <code>HTML5</code> <code>CSS3</code> <code>JavaScript</code> <code>React</code> <code>Firebase</code> <code>Git</code> <code>GitHub</code></p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="file">experience.log</h2>
+      <div class="timeline">
+        <article class="tl-item">
+          <time>2026 – Present</time>
+          <h3>Freelance Full-Stack Developer</h3>
+          <p class="where">Self-employed, Casablanca</p>
+          <ul>
+            <li>Available for websites, web apps and interactive projects.</li>
+            <li>Building and publishing my own projects on GitHub.</li>
+            <li>Learning with every project and looking for my first clients.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="file">projects/</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h3><i class="fa-regular fa-folder-open"></i> 4×4 Game</h3>
+          <p>A 4×4 grid game built with React, designed to be simple to learn and fun to replay.</p>
+          <div class="stack"><code>React</code><code>JavaScript</code><code>Firebase</code></div>
+          <div class="links">
+            <a href="https://github.com/khobaimad/4-4-game" target="_blank" rel="noopener" aria-label="4×4 Game source code on GitHub"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </article>
+        <article class="project project-next">
+          <h3><i class="fa-solid fa-plus"></i> Your project</h3>
+          <p>Got an idea for a website or web app? Let's build it together.</p>
+          <div class="links">
+            <a href="#footer"><i class="fa-solid fa-envelope"></i> Contact me</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <h2>Let's build something together</h2>
+    <p>Have a project in mind? Send me a message.</p>
+    <a href="mailto:khobaimad@gmail.com" class="btn"><i class="fa-solid fa-envelope"></i> khobaimad@gmail.com</a>
+    <p class="phone"><i class="fa-solid fa-phone"></i> <a href="tel:+212708047110">+212 708 047 110</a></p>
+    <ul class="social">
+      <li><a href="https://github.com/khobaimad" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/imad-khoba/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.instagram.com/0_z2i/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="mailto:khobaimad@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="tel:+212708047110" aria-label="Phone"><i class="fa-solid fa-phone"></i></a></li>
+    </ul>
+    <p class="copy">&copy; <span id="year"></span> Imad Khoba. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
