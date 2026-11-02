@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <script>try{if(localStorage.getItem("theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
 </head>
 <body>
 
@@ -32,6 +33,7 @@
   <main>
     <!-- HERO -->
     <section id="hero" class="hero">
+      <canvas id="binary" aria-hidden="true"></canvas>
       <div class="hero-text">
         <p class="hello">Hi, I'm</p>
         <h1>Imad Khoba</h1>
@@ -42,12 +44,27 @@
         </div>
       </div>
 
-      <div class="terminal" aria-label="Terminal introduction">
-        <div class="terminal-bar">
-          <i></i><i></i><i></i>
-          <span>~/imad/portfolio</span>
-        </div>
-        <pre class="terminal-body" id="terminal"></pre>
+      <div class="lamp-stage" id="lampStage">
+        <svg class="lamp" id="lamp" viewBox="0 0 260 480" role="group" aria-label="Pull-cord lamp that switches the page between dark and light">
+          <defs>
+            <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffd37a" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#ffd37a" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect class="mount" x="104" y="0" width="52" height="9" rx="2"/>
+          <line class="wire" x1="130" y1="9" x2="130" y2="166"/>
+          <polygon class="cone" points="64,286 196,286 310,520 -50,520" fill="url(#cone)"/>
+          <rect class="cap" x="118" y="162" width="24" height="20" rx="3"/>
+          <circle class="bulb" cx="130" cy="289" r="16"/>
+          <path class="shade" d="M106 182 H154 L212 282 Q214 290 204 290 H56 Q46 290 48 282 Z"/>
+          <line class="cord" id="cordLine" x1="196" y1="290" x2="196" y2="364"/>
+          <g id="cordHandle" role="button" tabindex="0" aria-pressed="false" aria-label="Pull the cord to switch the light">
+            <circle cx="196" cy="374" r="24" fill="transparent"/>
+            <circle class="bead" cx="196" cy="374" r="9"/>
+          </g>
+          <text class="lamp-hint" x="178" y="378" text-anchor="end">pull me</text>
+        </svg>
       </div>
     </section>
 
